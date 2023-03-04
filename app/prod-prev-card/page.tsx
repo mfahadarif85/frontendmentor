@@ -9,7 +9,7 @@ const Home = () => {
         <div className='basis-1/2'>
           <Image src={deskProductImg} alt='product' />
         </div>
-        <div className='mx-8 basis-1/2'>
+        <div className='mx-6 basis-1/2'>
           <h3 className='mt-8 text-xl uppercase tracking-[5px] text-gray-400'>
             Perfume
           </h3>
@@ -20,15 +20,16 @@ const Home = () => {
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-
-          <p className='mt-6 text-4xl font-extrabold text-green-700'>
-            $149.99{" "}
-            <span className='ml-6 text-lg font-normal text-black line-through'>
+          <div className='flex items-end'>
+            <p className='mt-6 text-4xl font-extrabold text-green-600'>
+              $149.99{" "}
+            </p>
+            <p className='ml-6 text-lg font-normal text-black line-through'>
               {" "}
               $169.99
-            </span>
-          </p>
-          <button className='mt-8 w-full rounded-md border-2 bg-green-700 px-10 py-2 text-white hover:bg-green-900'>
+            </p>
+          </div>
+          <button className='mt-8 w-full rounded-lg border-2 bg-green-600 px-10 py-4 font-bold text-white hover:bg-green-900'>
             🛒Add to Cart
           </button>
         </div>

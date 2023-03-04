@@ -1,26 +1,31 @@
 import Image from "next/image";
-import React from "react";
-import product from "/public/images/prod-prev-card/image-product-desktop.jpg";
+import deskProductImg from "/public/images/prod-prev-card/image-product-desktop.jpg";
+import mobProdImg from "/public/images/prod-prev-card/image-product-mobile.jpg";
 
 const Home = () => {
   return (
-    <div className='flex h-screen w-full bg-yellow-100'>
-      <div className='m-auto flex bg-white'>
-        <div>
-          <Image src={product} alt='product' width={200} height={200} />
+    <div className='flex h-screen items-center justify-center bg-[#f2ebe3]'>
+      <div className='flex w-1/2 rounded-lg bg-white shadow-lg'>
+        <div className='basis-1/2'>
+          <Image src={deskProductImg} alt='product' />
         </div>
-        <div>
-          <h3>Preview</h3>
-          <h1>Gabrielle Essence Eau De Parfum</h1>
-          <p>
+        <div className='ml-4 basis-1/2'>
+          <h3 className='mt-10 font-extralight'>Preview</h3>
+          <h1 className='mt-6 text-5xl font-extrabold'>
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p className='mt-6'>
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
 
-          <p>
-            $149.99 <span> $169.99</span>
+          <p className='mt-6 text-4xl font-extrabold'>
+            $149.99{" "}
+            <span className='text-lg font-normal line-through'> $169.99</span>
           </p>
-          <button>Add to Cart</button>
+          <button className='mt-4 w-full rounded-md border-2 bg-green-800 p-2 text-white'>
+            🛒Add to Cart
+          </button>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ type Product = {
   price: number;
   uvp: number;
   imageDesktop: string;
-  // imageMobile: string;
+  imageMobile: string;
 };
 
 const ItemCard = ({
@@ -14,7 +14,7 @@ const ItemCard = ({
   description,
   price,
   imageDesktop,
-  // imageMobile,
+  imageMobile,
   uvp,
 }: Product) => {
   return (
@@ -23,6 +23,7 @@ const ItemCard = ({
         <div className='basis-1/2'>
           <picture>
             <img src={imageDesktop} alt='product' />
+            <img src={imageMobile} alt='product' className='hidden' />
           </picture>
         </div>
         <div className='mx-6 basis-1/2'>

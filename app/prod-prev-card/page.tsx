@@ -12,6 +12,7 @@ const Home = () => {
         uvp={169.99}
         description='A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.'
         imageDesktop='/image-product-desktop.jpg'
+        imageMobile='/image-product-mobile.jpg'
       />
     </div>
   );

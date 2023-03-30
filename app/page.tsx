@@ -11,6 +11,9 @@ export default function Home() {
         <li>
           <Link href='/prod-prev-card'>Product Preview Card</Link>
         </li>
+        <li>
+          <Link href='/results-sum'>Results Summary Component</Link>
+        </li>
       </ul>
     </div>
   );
